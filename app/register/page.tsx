@@ -28,6 +28,7 @@ export default function RegisterPage() {
             setError(result.error.message || "Failed to create account");
             setLoading(false);
         } else {
+            router.refresh();
             router.push("/dashboard");
         }
     };

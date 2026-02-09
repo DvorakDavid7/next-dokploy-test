@@ -10,10 +10,3 @@ export const usersTable = pgTable("users", {
     age: integer().notNull(),
     email: varchar({ length: 255 }).notNull().unique(),
 });
-
-db.insert(usersTable).values({
-    name: "John Doe",
-    age: 30,
-    email: "john.doe@example.com",
-});
-

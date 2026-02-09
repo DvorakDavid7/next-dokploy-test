@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "drizzle-kit push && tsx lib/seed.ts && next start",
+    "start": "drizzle-kit push && next start",
     "lint": "eslint",
-    "db:seed": "tsx lib/seed.ts"
+    "db:seed": "tsx lib/seed.ts",
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@libsql/client": "^0.17.0",

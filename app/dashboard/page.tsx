@@ -8,8 +8,6 @@ export default async function DashboardPage() {
         headers: await headers(),
     });
 
-    console.log("Session on dashboard page:", session);
-
     if (!session) {
         redirect("/login");
     }

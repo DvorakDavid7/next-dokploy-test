@@ -7,7 +7,7 @@
     "build": "next build && npm run db:migrate",
     "start": "next start",
     "lint": "eslint",
-    "db:migrate": "drizzle-kit push"
+    "db:migrate": "drizzle-kit generate"
   },
   "dependencies": {
     "@libsql/client": "^0.17.0",

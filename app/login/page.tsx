@@ -17,10 +17,14 @@ export default function LoginPage() {
         setError("");
         setLoading(true);
 
+        console.log("Attempting to sign in with:", { email, password });
+
         const result = await signIn.email({
             email,
             password,
         });
+
+        console.log("Result of sign in attempt:", result);
 
         if (result.error) {
             setError(result.error.message || "Failed to sign in");
